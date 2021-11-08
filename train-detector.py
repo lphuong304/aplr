@@ -85,11 +85,7 @@ if __name__ == '__main__':
 		if isfile(labfile):
 			L = readShapes(labfile)
 			I = cv2.imread(file)
-			if (I.size == 0):
-			  pass
-			# print(file)
-			else:
-			  Data.append([I,L[0]])
+			Data.append([I,L[0]])
 
 	print ('%d images with labels found' % len(Data))
 
